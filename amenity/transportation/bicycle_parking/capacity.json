@@ -1,0 +1,27 @@
+{
+    "label": "🚲",
+    "title": "How many bicycles can be parked here?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
+        {
+            "tagValue": "bicycle_parking",
+            "relation": "=",
+            "tagKey": "amenity",
+            "included": "include"
+        },
+        {
+            "included": "include",
+            "tagKey": "capacity",
+            "relation": "=",
+            "tagValue": ""
+        }
+    ],
+    "tagKeys": [
+        "capacity"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+  "label": "🚲",
+  "title": "What type of bicycle parking is this?",
+  "geometry": {
+    "area": true,
+    "point": true,
+    "vertex": false,
+    "line": true
+  },
+  "filters": [
+    {
+      "tagValue": "bicycle_parking",
+      "relation": "=",
+      "tagKey": "amenity",
+      "included": "include"
+    },
+    {
+      "included": "include",
+      "tagKey": "bicycle_parking",
+      "relation": "=",
+      "tagValue": ""
+    }
+  ],
+  "tagKeys": [
+    "bicycle_parking"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+    "label": "🚲",
+    "title": "What type of bicycle rental is this?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
+        {
+            "tagValue": "bicycle_rental",
+            "relation": "=",
+            "tagKey": "amenity",
+            "included": "include"
+        },
+        {
+            "included": "include",
+            "tagKey": "bicycle_rental",
+            "relation": "=",
+            "tagValue": ""
+        }
+    ],
+    "tagKeys": [
+        "bicycle_rental"
+    ]
+}

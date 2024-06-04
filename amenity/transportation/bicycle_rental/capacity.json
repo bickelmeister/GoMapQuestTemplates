@@ -1,0 +1,33 @@
+{
+    "label": "🚲",
+    "title": "How many rental bicycle spaces are here?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
+        {
+            "tagValue": "bicycle_rental",
+            "relation": "=",
+            "tagKey": "amenity",
+            "included": "include"
+        },
+        {
+            "tagValue": "docking_station",
+            "relation": "=",
+            "tagKey": "bicycle_rental",
+            "included": "include"
+        },
+        {
+            "included": "include",
+            "tagKey": "capacity",
+            "relation": "=",
+            "tagValue": ""
+        }
+    ],
+    "tagKeys": [
+        "capacity"
+    ]
+}

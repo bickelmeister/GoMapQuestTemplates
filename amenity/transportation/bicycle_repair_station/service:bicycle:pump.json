@@ -1,0 +1,33 @@
+{
+    "label": "🚲",
+    "title": "Do you have to pay to park a bicycle here?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
+        {
+            "tagKey": "amenity",
+            "relation": "=",
+            "tagValue": "bicycle_rental",
+            "included": "include"
+        },
+        {
+            "tagKey": "shop",
+            "relation": "=",
+            "tagValue": "bicycle",
+            "included": "include"
+        },
+        {
+            "tagKey": "service:bicycle:pump",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "service:bicycle:pump"
+    ]
+}

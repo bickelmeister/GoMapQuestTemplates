@@ -1,0 +1,27 @@
+{
+    "label": "🚲",
+    "title": "Do you have to pay to park a bicycle here?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
+        {
+            "tagValue": "bicycle_parking",
+            "relation": "=",
+            "tagKey": "amenity",
+            "included": "include"
+        },
+        {
+            "included": "include",
+            "tagKey": "fee",
+            "relation": "=",
+            "tagValue": ""
+        }
+    ],
+    "tagKeys": [
+        "fee"
+    ]
+}

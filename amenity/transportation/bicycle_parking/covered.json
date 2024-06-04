@@ -1,0 +1,27 @@
+{
+  "label": "🚲",
+  "title": "Is this bicycle parking covered(protected from rain)?",
+  "geometry": {
+    "area": true,
+    "point": true,
+    "vertex": false,
+    "line": true
+  },
+  "filters": [
+    {
+      "tagValue": "bicycle_parking",
+      "relation": "=",
+      "tagKey": "amenity",
+      "included": "include"
+    },
+    {
+      "included": "include",
+      "tagKey": "covered",
+      "relation": "=",
+      "tagValue": ""
+    }
+  ],
+  "tagKeys": [
+    "covered"
+  ]
+}
