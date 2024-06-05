@@ -9,16 +9,16 @@
     },
     "filters": [
         {
-            "tagValue": "bicycle_parking",
-            "relation": "=",
             "tagKey": "amenity",
+            "relation": "=",
+            "tagValue": "bicycle_parking",
             "included": "include"
         },
         {
-            "included": "include",
             "tagKey": "access",
             "relation": "=",
-            "tagValue": ""
+            "tagValue": "",
+            "included": "include"
         }
     ],
     "tagKeys": [

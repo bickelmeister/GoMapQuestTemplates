@@ -9,22 +9,16 @@
     },
     "filters": [
         {
-            "tagValue": "bicycle_rental",
-            "relation": "=",
             "tagKey": "amenity",
-            "included": "include"
-        },
-        {
-            "tagValue": "docking_station",
             "relation": "=",
-            "tagKey": "bicycle_rental",
+            "tagValue": "bicycle_rental",
             "included": "include"
         },
         {
-            "included": "include",
             "tagKey": "capacity",
             "relation": "=",
-            "tagValue": ""
+            "tagValue": "",
+            "included": "include"
         }
     ],
     "tagKeys": [
