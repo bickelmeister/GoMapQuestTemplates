@@ -1,6 +1,6 @@
 {
     "label": "🚲",
-    "title": "Do you have to pay to park a bicycle here?",
+    "title": "Is there a working bicycle pump here? Not restricted to customers.",
     "geometry": {
         "area": true,
         "point": true,
@@ -9,19 +9,19 @@
     },
     "filters": [
         {
-            "tagKey": "amenity",
+            "tagKey": "shop",
             "relation": "=",
-            "tagValue": "bicycle_parking",
+            "tagValue": "bicycle",
             "included": "include"
         },
         {
-            "tagKey": "fee",
+            "tagKey": "service:bicycle:pump",
             "relation": "=",
             "tagValue": "",
             "included": "include"
         }
     ],
     "tagKeys": [
-        "fee"
+        "service:bicycle:pump"
     ]
 }

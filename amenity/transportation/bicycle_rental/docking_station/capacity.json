@@ -1,6 +1,6 @@
 {
     "label": "🚲",
-    "title": "Do you have to pay to park a bicycle here?",
+    "title": "How many rental bicycle spaces are here?",
     "geometry": {
         "area": true,
         "point": true,
@@ -9,19 +9,19 @@
     },
     "filters": [
         {
-            "tagKey": "amenity",
+            "tagKey": "bicycle_rental",
             "relation": "=",
-            "tagValue": "bicycle_parking",
+            "tagValue": "docking_station",
             "included": "include"
         },
         {
-            "tagKey": "fee",
+            "tagKey": "capacity",
             "relation": "=",
             "tagValue": "",
             "included": "include"
         }
     ],
     "tagKeys": [
-        "fee"
+        "capacity"
     ]
 }

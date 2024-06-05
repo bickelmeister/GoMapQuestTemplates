@@ -1,6 +1,6 @@
 {
     "label": "🚲",
-    "title": "Do you have to pay to park a bicycle here?",
+    "title": "Is there a working bicycle pump here?",
     "geometry": {
         "area": true,
         "point": true,
@@ -11,13 +11,7 @@
         {
             "tagKey": "amenity",
             "relation": "=",
-            "tagValue": "bicycle_rental",
-            "included": "include"
-        },
-        {
-            "tagKey": "shop",
-            "relation": "=",
-            "tagValue": "bicycle",
+            "tagValue": "bicycle_repair_station",
             "included": "include"
         },
         {
