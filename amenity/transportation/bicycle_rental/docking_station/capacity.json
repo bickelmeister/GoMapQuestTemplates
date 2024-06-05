@@ -1,27 +1,32 @@
 {
-    "label": "🚲",
-    "title": "How many rental bicycle spaces are here?",
-    "geometry": {
-        "area": true,
-        "point": true,
-        "vertex": false,
-        "line": true
-    },
-    "filters": [
+    "featureQuestList": [],
+    "filterQuestList": [
         {
-            "tagKey": "bicycle_rental",
-            "relation": "=",
-            "tagValue": "docking_station",
-            "included": "include"
-        },
-        {
-            "tagKey": "capacity",
-            "relation": "=",
-            "tagValue": "",
-            "included": "include"
+            "label": "🚲",
+            "title": "How many rental bicycle spaces are here?",
+            "geometry": {
+                "area": true,
+                "point": true,
+                "vertex": false,
+                "line": true
+            },
+            "filters": [
+                {
+                    "tagKey": "bicycle_rental",
+                    "relation": "=",
+                    "tagValue": "docking_station",
+                    "included": "include"
+                },
+                {
+                    "tagKey": "capacity",
+                    "relation": "=",
+                    "tagValue": "",
+                    "included": "include"
+                }
+            ],
+            "tagKeys": [
+                "capacity"
+            ]
         }
-    ],
-    "tagKeys": [
-        "capacity"
     ]
 }
