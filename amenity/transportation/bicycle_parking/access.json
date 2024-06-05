@@ -1,27 +1,32 @@
 {
-    "label": "🚲",
-    "title": "Who is allowed to park a bicycle here?",
-    "geometry": {
-        "area": true,
-        "point": true,
-        "vertex": false,
-        "line": true
-    },
-    "filters": [
+    "featureQuestList": [],
+    "filterQuestList": [
         {
-            "tagKey": "amenity",
-            "relation": "=",
-            "tagValue": "bicycle_parking",
-            "included": "include"
-        },
-        {
-            "tagKey": "access",
-            "relation": "=",
-            "tagValue": "",
-            "included": "include"
+            "label": "🚲",
+            "title": "Who is allowed to park a bicycle here?",
+            "geometry": {
+                "area": true,
+                "point": true,
+                "vertex": false,
+                "line": true
+            },
+            "filters": [
+                {
+                    "tagKey": "amenity",
+                    "relation": "=",
+                    "tagValue": "bicycle_parking",
+                    "included": "include"
+                },
+                {
+                    "tagKey": "access",
+                    "relation": "=",
+                    "tagValue": "",
+                    "included": "include"
+                }
+            ],
+            "tagKeys": [
+                "access"
+            ]
         }
-    ],
-    "tagKeys": [
-        "access"
     ]
 }
