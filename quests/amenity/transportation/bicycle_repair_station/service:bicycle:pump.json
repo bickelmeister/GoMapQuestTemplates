@@ -1,32 +1,27 @@
 {
-    "featureQuestList": [],
-    "filterQuestList": [
+    "label": "🚲",
+    "title": "Is there a working bicycle pump here?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
         {
-            "label": "🚲",
-            "title": "Is there a working bicycle pump here?",
-            "geometry": {
-                "area": true,
-                "point": true,
-                "vertex": false,
-                "line": true
-            },
-            "filters": [
-                {
-                    "tagKey": "amenity",
-                    "relation": "=",
-                    "tagValue": "bicycle_repair_station",
-                    "included": "include"
-                },
-                {
-                    "tagKey": "service:bicycle:pump",
-                    "relation": "=",
-                    "tagValue": "",
-                    "included": "include"
-                }
-            ],
-            "tagKeys": [
-                "service:bicycle:pump"
-            ]
+            "tagKey": "amenity",
+            "relation": "=",
+            "tagValue": "bicycle_repair_station",
+            "included": "include"
+        },
+        {
+            "tagKey": "service:bicycle:pump",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
         }
+    ],
+    "tagKeys": [
+        "service:bicycle:pump"
     ]
 }

@@ -1,32 +1,27 @@
 {
-    "featureQuestList": [],
-    "filterQuestList": [
+    "label": "🚲",
+    "title": "What type of bicycle rental is this?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
         {
-            "label": "🚲",
-            "title": "What type of bicycle rental is this?",
-            "geometry": {
-                "area": true,
-                "point": true,
-                "vertex": false,
-                "line": true
-            },
-            "filters": [
-                {
-                    "tagKey": "amenity",
-                    "relation": "=",
-                    "tagValue": "bicycle_rental",
-                    "included": "include"
-                },
-                {
-                    "tagKey": "bicycle_rental",
-                    "relation": "=",
-                    "tagValue": "",
-                    "included": "include"
-                }
-            ],
-            "tagKeys": [
-                "bicycle_rental"
-            ]
+            "tagKey": "amenity",
+            "relation": "=",
+            "tagValue": "bicycle_rental",
+            "included": "include"
+        },
+        {
+            "tagKey": "bicycle_rental",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
         }
+    ],
+    "tagKeys": [
+        "bicycle_rental"
     ]
 }

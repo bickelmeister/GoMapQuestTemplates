@@ -1,32 +1,27 @@
 {
-    "featureQuestList": [],
-    "filterQuestList": [
+    "label": "🚲",
+    "title": "Is this bicycle parking area equipped with lighting?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
         {
-            "label": "🚲",
-            "title": "Is this bicycle parking area equipped with lighting?",
-            "geometry": {
-                "area": true,
-                "point": true,
-                "vertex": false,
-                "line": true
-            },
-            "filters": [
-                {
-                    "tagKey": "amenity",
-                    "relation": "=",
-                    "tagValue": "bicycle_parking",
-                    "included": "include"
-                },
-                {
-                    "tagKey": "lit",
-                    "relation": "=",
-                    "tagValue": "",
-                    "included": "include"
-                }
-            ],
-            "tagKeys": [
-                "lit"
-            ]
+            "tagKey": "amenity",
+            "relation": "=",
+            "tagValue": "bicycle_parking",
+            "included": "include"
+        },
+        {
+            "tagKey": "lit",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
         }
+    ],
+    "tagKeys": [
+        "lit"
     ]
 }

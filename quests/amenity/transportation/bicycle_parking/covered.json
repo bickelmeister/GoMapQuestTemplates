@@ -1,32 +1,27 @@
 {
-  "featureQuestList": [],
-  "filterQuestList": [
+  "label": "🚲",
+  "title": "Is this bicycle parking covered(protected from rain)?",
+  "geometry": {
+    "area": true,
+    "point": true,
+    "vertex": false,
+    "line": true
+  },
+  "filters": [
     {
-      "label": "🚲",
-      "title": "Is this bicycle parking covered(protected from rain)?",
-      "geometry": {
-        "area": true,
-        "point": true,
-        "vertex": false,
-        "line": true
-      },
-      "filters": [
-        {
-          "tagKey": "amenity",
-          "relation": "=",
-          "tagValue": "bicycle_parking",
-          "included": "include"
-        },
-        {
-          "tagKey": "covered",
-          "relation": "=",
-          "tagValue": "",
-          "included": "include"
-        }
-      ],
-      "tagKeys": [
-        "covered"
-      ]
+      "tagKey": "amenity",
+      "relation": "=",
+      "tagValue": "bicycle_parking",
+      "included": "include"
+    },
+    {
+      "tagKey": "covered",
+      "relation": "=",
+      "tagValue": "",
+      "included": "include"
     }
+  ],
+  "tagKeys": [
+    "covered"
   ]
 }
