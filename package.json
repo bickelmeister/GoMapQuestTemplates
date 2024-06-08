@@ -1,0 +1,14 @@
+{
+  "name": "gomapquesttemplates",
+  "version": "1.0.0",
+  "description": "This project contains quest templates for the iOS App \"Go Map!!\".",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elmar Bickel",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
