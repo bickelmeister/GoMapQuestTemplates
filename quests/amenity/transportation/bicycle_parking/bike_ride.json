@@ -1,0 +1,27 @@
+{
+    "label": "🚲",
+    "title": "Is there public transport nearby?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
+        {
+            "tagKey": "amenity",
+            "relation": "=",
+            "tagValue": "bicycle_parking",
+            "included": "include"
+        },
+        {
+            "tagKey": "bike_ride",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "bike_ride"
+    ]
+}

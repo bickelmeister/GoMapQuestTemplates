@@ -1,0 +1,27 @@
+{
+    "label": "🚲",
+    "title": "How many cargo bikes can be parked here?",
+    "geometry": {
+        "vertex": false,
+        "line": true,
+        "area": true,
+        "point": true
+    },
+    "filters": [
+        {
+            "tagKey": "amenity",
+            "relation": "=",
+            "tagValue": "bicycle_parking",
+            "included": "include"
+        },
+        {
+            "tagKey": "capacity:cargo_bike",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "capacity:cargo_bike"
+    ]
+}

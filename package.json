@@ -1,0 +1,31 @@
+{
+  "type": "module",
+  "name": "gomapquesttemplates",
+  "version": "1.0.0",
+  "description": "This project contains quest templates for the iOS App \"Go Map!!\".",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -w",
+    "readme": "npm exec oclif readme"
+  },
+  "author": "Elmar Bickel",
+  "license": "ISC",
+  "dependencies": {
+    "@oclif/core": "^4.0.3",
+    "typescript": "^5.4.5"
+  },
+  "bin": {
+    "gomapquests": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "gomapquests",
+    "commands": "./dist/commands",
+    "dirname": "gomapquests",
+    "topicSeparator": " "
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.34",
+    "ts-node": "^10.9.2"
+  }
+}
