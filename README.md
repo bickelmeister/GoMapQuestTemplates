@@ -16,7 +16,6 @@ The structure of the project will be according to the [map][2] feature of OSM.
 ## Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g gomapquesttemplates
 $ gomapquests COMMAND
@@ -28,14 +27,12 @@ USAGE
   $ gomapquests COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 ## Commands
 
 <!-- commands -->
-
-- [`gomapquests create`](#gomapquests-create)
+* [`gomapquests create`](#gomapquests-create)
 
 ## `gomapquests create`
 
@@ -43,9 +40,10 @@ Generates a JSON file with quests. This file can be imported by Go Map!!
 
 ```
 USAGE
-  $ gomapquests create [-q <value>...] [-d <value>] [-o <value>]
+  $ gomapquests create [-q <value>...] [-d <value>] [-o <value>] [-a]
 
 FLAGS
+  -a, --all                include all JSON files from the root quests directory and its subdirectories
   -d, --directory=<value>  the directory you want to create the json output for
   -o, --output=<value>     [default: ./output] output directory
   -q, --quests=<value>...  name of the quest file you want to create a json output for
@@ -57,8 +55,9 @@ EXAMPLES
   $ gomapquests create -q service:bicycle:pump -q access -o ./output
 
   $ gomapquests create -d bicycle_parking -o ./output
-```
 
+  $ gomapquests create --all -o ./output
+```
 <!-- commandsstop -->
 
 ## Contribution

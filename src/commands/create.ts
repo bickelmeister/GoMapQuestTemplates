@@ -10,15 +10,16 @@ export default class Create extends Command {
   static override examples = [
     '<%= config.bin %> <%= command.id %> -q service:bicycle:pump -q access -o ./output',
     '<%= config.bin %> <%= command.id %> -d bicycle_parking -o ./output',
+    '<%= config.bin %> <%= command.id %> --all -o ./output',
   ]
 
   static override flags = {
     quests: Flags.string({ char: 'q', description: 'name of the quest file you want to create a json output for', multiple: true }),
     directory: Flags.string({ char: 'd', description: 'the directory you want to create the json output for' }),
-    output: Flags.string({ char: 'o', description: 'output directory', default: './output' })
+    output: Flags.string({ char: 'o', description: 'output directory', default: './output' }),
+    all: Flags.boolean({ char: 'a', description: 'include all JSON files from the root quests directory and its subdirectories' })
   }
 
-  // Modified function to find all matching quest files
   async findQuestFiles(baseDir: string, filename: string): Promise<string[]> {
     const files = fs.readdirSync(baseDir);
     const matchedFiles: string[] = [];
@@ -52,13 +53,28 @@ export default class Create extends Command {
     return null;
   }
 
+  async findAllQuestFiles(baseDir: string): Promise<string[]> {
+    const files = fs.readdirSync(baseDir);
+    const allFiles: string[] = [];
+    for (const file of files) {
+      const fullPath = path.join(baseDir, file);
+      if (fs.statSync(fullPath).isDirectory()) {
+        const results = await this.findAllQuestFiles(fullPath);
+        allFiles.push(...results);
+      } else if (file.endsWith('.json')) {
+        allFiles.push(fullPath);
+      }
+    }
+    return allFiles;
+  }
+
   public async run(): Promise<void> {
     const { flags } = await this.parse(Create);
-    const { quests, directory, output } = flags;
+    const { quests, directory, output, all } = flags;
 
-    // Check that either quests or directory is provided
-    if (!quests && !directory) {
-      this.error('Either --quests or --directory must be provided');
+    // Check that either quests, directory, or all is provided
+    if (!quests && !directory && !all) {
+      this.error('Either --quests, --directory, or --all must be provided');
     }
 
     const outputDir = output;
@@ -97,6 +113,14 @@ export default class Create extends Command {
         }
       } else {
         this.error(`Directory not found: ${directory}`);
+      }
+    }
+
+    if (all) {
+      const allQuestPaths = await this.findAllQuestFiles(BASE_QUESTS_DIR);
+      for (const questPath of allQuestPaths) {
+        const questJson = JSON.parse(fs.readFileSync(questPath, 'utf8'));
+        filterQuestList.push(questJson);
       }
     }
 
