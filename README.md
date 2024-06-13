@@ -15,7 +15,10 @@ The structure of the project will be according to the [map][2] feature of OSM.
 
 ## Usage
 
+> currently the npm installation is not supported, still in develop mode, rollout estimated end of june 2024
+
 <!-- usage -->
+
 ```sh-session
 $ npm install -g gomapquesttemplates
 $ gomapquests COMMAND
@@ -27,12 +30,14 @@ USAGE
   $ gomapquests COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 ## Commands
 
 <!-- commands -->
-* [`gomapquests create`](#gomapquests-create)
+
+- [`gomapquests create`](#gomapquests-create)
 
 ## `gomapquests create`
 
@@ -58,6 +63,7 @@ EXAMPLES
 
   $ gomapquests create --all -o ./output
 ```
+
 <!-- commandsstop -->
 
 ## Contribution
