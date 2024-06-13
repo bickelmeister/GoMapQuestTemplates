@@ -1,0 +1,27 @@
+{
+    "label": "🚏",
+    "title": "Does this public transport platform has tactile paving?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
+        {
+            "tagKey": "public_transport",
+            "relation": "=",
+            "tagValue": "platform",
+            "included": "include"
+        },
+        {
+            "tagKey": "tactile_paving",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "tactile_paving"
+    ]
+}
