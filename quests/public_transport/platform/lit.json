@@ -1,0 +1,27 @@
+{
+    "label": "🚏",
+    "title": "Is this public transport platform lit?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
+        {
+            "tagKey": "public_transport",
+            "relation": "=",
+            "tagValue": "platform",
+            "included": "include"
+        },
+        {
+            "tagKey": "lit",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "lit"
+    ]
+}
