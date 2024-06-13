@@ -1,0 +1,21 @@
+{
+    "label": "🚙",
+    "title": "What type of traffic calming is this?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
+        {
+            "tagKey": "traffic_calming",
+            "relation": "=",
+            "tagValue": "yes",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "traffic_calming"
+    ]
+}
