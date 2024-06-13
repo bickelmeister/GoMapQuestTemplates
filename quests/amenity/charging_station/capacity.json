@@ -1,0 +1,27 @@
+{
+    "label": "🔌",
+    "title": "How many cars can be charged here at the same time?",
+    "geometry": {
+        "area": true,
+        "point": true,
+        "vertex": false,
+        "line": true
+    },
+    "filters": [
+        {
+            "tagKey": "amenity",
+            "relation": "=",
+            "tagValue": "charging_station",
+            "included": "include"
+        },
+        {
+            "tagKey": "cpacity",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "capacity"
+    ]
+}
