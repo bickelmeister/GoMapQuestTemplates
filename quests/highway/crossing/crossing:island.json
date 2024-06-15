@@ -1,0 +1,27 @@
+{
+    "label": "🚸",
+    "title": "Does this pedestrian crossing have an island?",
+    "geometry": {
+        "area": false,
+        "point": true,
+        "vertex": false,
+        "line": false
+    },
+    "filters": [
+        {
+            "tagKey": "highway",
+            "relation": "=",
+            "tagValue": "crossing",
+            "included": "include"
+        },
+        {
+            "tagKey": "crossing:island",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "crossing:island"
+    ]
+}
