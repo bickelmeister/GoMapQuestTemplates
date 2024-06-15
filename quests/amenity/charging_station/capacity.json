@@ -15,7 +15,7 @@
             "included": "include"
         },
         {
-            "tagKey": "cpacity",
+            "tagKey": "capacity",
             "relation": "=",
             "tagValue": "",
             "included": "include"
