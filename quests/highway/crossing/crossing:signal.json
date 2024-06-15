@@ -1,6 +1,6 @@
 {
     "label": "🚸",
-    "title": "Does this pedestrian crossing have an island?",
+    "title": "Do you have to wait for a traffic signal to cross here?",
     "geometry": {
         "area": false,
         "point": true,
@@ -15,13 +15,13 @@
             "included": "include"
         },
         {
-            "tagKey": "crossing:island",
+            "tagKey": "crossing:signal",
             "relation": "=",
             "tagValue": "",
             "included": "include"
         }
     ],
     "tagKeys": [
-        "crossing:island"
+        "crossing:signal"
     ]
 }
