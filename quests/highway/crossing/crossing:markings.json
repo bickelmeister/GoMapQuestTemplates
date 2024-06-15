@@ -1,0 +1,27 @@
+{
+    "label": "🚸",
+    "title": "Does this crossing have markings on the ground?",
+    "geometry": {
+        "area": false,
+        "point": true,
+        "vertex": false,
+        "line": false
+    },
+    "filters": [
+        {
+            "tagKey": "highway",
+            "relation": "=",
+            "tagValue": "crossing",
+            "included": "include"
+        },
+        {
+            "tagKey": "crossing:markings",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "crossing:markings"
+    ]
+}
