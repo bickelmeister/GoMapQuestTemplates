@@ -1,0 +1,27 @@
+{
+    "label": "🚸",
+    "title": "What kerb is at the crossing?",
+    "geometry": {
+        "area": false,
+        "point": true,
+        "vertex": false,
+        "line": false
+    },
+    "filters": [
+        {
+            "tagKey": "highway",
+            "relation": "=",
+            "tagValue": "crossing",
+            "included": "include"
+        },
+        {
+            "tagKey": "kerb",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "kerb"
+    ]
+}
