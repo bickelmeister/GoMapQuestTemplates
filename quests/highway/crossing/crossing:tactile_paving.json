@@ -1,0 +1,27 @@
+{
+    "label": "🚸",
+    "title": "Does this pedestrian crossing have tactile paving?",
+    "geometry": {
+        "area": false,
+        "point": true,
+        "vertex": false,
+        "line": false
+    },
+    "filters": [
+        {
+            "tagKey": "highway",
+            "relation": "=",
+            "tagValue": "crossing",
+            "included": "include"
+        },
+        {
+            "tagKey": "crossing:tactile_paving",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "crossing:tactile_paving"
+    ]
+}
