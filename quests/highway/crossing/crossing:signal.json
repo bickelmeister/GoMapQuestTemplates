@@ -1,0 +1,27 @@
+{
+    "label": "🚸",
+    "title": "Do you have to wait for a traffic signal to cross here?",
+    "geometry": {
+        "area": false,
+        "point": true,
+        "vertex": false,
+        "line": false
+    },
+    "filters": [
+        {
+            "tagKey": "highway",
+            "relation": "=",
+            "tagValue": "crossing",
+            "included": "include"
+        },
+        {
+            "tagKey": "crossing:signal",
+            "relation": "=",
+            "tagValue": "",
+            "included": "include"
+        }
+    ],
+    "tagKeys": [
+        "crossing:signal"
+    ]
+}
