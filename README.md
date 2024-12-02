@@ -15,7 +15,7 @@ The structure of the project will be according to the [map][2] feature of OSM.
 
 ## Usage
 
-> currently the npm installation is not supported, still in develop mode, rollout estimated end of june 2024
+> currently the npm installation is not supported, still in develop mode, rollout estimated end of 2024
 
 <!-- usage -->
 
